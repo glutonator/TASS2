@@ -62,8 +62,8 @@ def rating_fix(value,default_value=77.0):
     else:       
         return float(value)
 
-#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\opinie\\test2.csv', 'r',encoding="utf8") as file:
-with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\opinie\\airport.csv', 'r',encoding="utf8") as file:
+#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test2.csv', 'r',encoding="utf8") as file:
+with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airport.csv', 'r',encoding="utf8") as file:
     count =1
     dictionary_airlines = dict()
     for line in file:

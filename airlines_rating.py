@@ -116,8 +116,8 @@ dictionary_airlines = dict()
 
 #airline_name="other_name"
 
-#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\opinie\\test.csv', 'r',encoding="utf8") as file:
-with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\opinie\\airline.csv', 'r',encoding="utf8") as file:
+#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test.csv', 'r',encoding="utf8") as file:
+with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airline.csv', 'r',encoding="utf8") as file:
     count =1
     #tttt=0
     for line in file:
