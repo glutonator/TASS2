@@ -160,7 +160,7 @@ with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\opinie\\airline.csv',
         count+=1
 
 #wyznaczanie sredniej
-print("odsaksado")
+print("srednia")
 for i in dictionary_airlines.items():
     i[1].avrage()
 
