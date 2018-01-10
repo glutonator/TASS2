@@ -109,59 +109,61 @@ def delete_string(word):
 #print(sddsds)
 #qqqq = AirLine("hello",0,0,0,0,0,0,0,0,0)
 
-dictionary_airlines = dict()
+
 #dictionary_airlines["qqqq"] = qqqq
 #print(dictionary_airlines)
 
 
 #airline_name="other_name"
+def rating_airlines(dictionary_airlines):
+    #with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test.csv', 'r',encoding="utf8") as file:
+    with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airline.csv', 'r',encoding="utf8") as file:
+        count =1
+        #tttt=0
+        for line in file:
+            if count !=1:
+                list_info = line.split('","')
+                #sprawdzenie czy sie dobrze wszytko wczytalo jesli nie, to pomija linijke
+                if (len(list_info)==20):
+                    airline_name=(list_info[0])[1:len(list_info[0])]
 
-#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test.csv', 'r',encoding="utf8") as file:
-with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airline.csv', 'r',encoding="utf8") as file:
-    count =1
-    #tttt=0
-    for line in file:
-        if count !=1:
-            list_info = line.split('","')
-            #sprawdzenie czy sie dobrze wszytko wczytalo jesli nie, to pomija linijke
-            if (len(list_info)==20):
-                airline_name=(list_info[0])[1:len(list_info[0])]
+                    tmp =list()
+                    for i in range (11,19):
+                        tmp.append(rating_fix(list_info[i]))
+                    
+                    recom_temp=(list_info[19])[0:len(list_info[19])-2]
+                    #print(list_info[11])
+                    tmp.append(rating_fix(recom_temp))
 
-                tmp =list()
-                for i in range (11,19):
-                    tmp.append(rating_fix(list_info[i]))
-                
-                recom_temp=(list_info[19])[0:len(list_info[19])-2]
-                #print(list_info[11])
-                tmp.append(rating_fix(recom_temp))
+                    #print(tmp)
+                    
+                    # if airline_name=='air-canada-rouge':
+                    #     for i in range (0,20):
+                    #         print(i, list_info[i])
+                    #     tttt+=1
+                    #     print(("licznik",tttt))  
 
-                #print(tmp)
-                
-                # if airline_name=='air-canada-rouge':
-                #     for i in range (0,20):
-                #         print(i, list_info[i])
-                #     tttt+=1
-                #     print(("licznik",tttt))  
+                    if airline_name in dictionary_airlines:
+                        dictionary_airlines[airline_name].add_list(tmp)
+                        #dictionary_airlines[airline_name].add(list_info[11],list_info[12],list_info[13],list_info[14],list_info[15],list_info[16],list_info[17],list_info[18],recommended)
+                        #usuniecie \n z ostaniego pola
+                        # temp2=list_info[19]
+                        # temp = temp2.split('\n')
+                        # recommended = temp[0]
+                        #dictionary_airlines[airline_name].add(list_info[11],list_info[12],list_info[13],list_info[14],list_info[15],list_info[16],list_info[17],list_info[18],recommended)
+                    else:
+                        new_airline = AirLine(airline_name,0,0,0,0,0,0,0,0,0)
+                        new_airline.add_list(tmp)
+                        print(airline_name)
+                        dictionary_airlines[airline_name]=new_airline
 
-                if airline_name in dictionary_airlines:
-                    dictionary_airlines[airline_name].add_list(tmp)
-                    #dictionary_airlines[airline_name].add(list_info[11],list_info[12],list_info[13],list_info[14],list_info[15],list_info[16],list_info[17],list_info[18],recommended)
-                    #usuniecie \n z ostaniego pola
-                    # temp2=list_info[19]
-                    # temp = temp2.split('\n')
-                    # recommended = temp[0]
-                    #dictionary_airlines[airline_name].add(list_info[11],list_info[12],list_info[13],list_info[14],list_info[15],list_info[16],list_info[17],list_info[18],recommended)
-                else:
-                    new_airline = AirLine(airline_name,0,0,0,0,0,0,0,0,0)
-                    new_airline.add_list(tmp)
-                    print(airline_name)
-                    dictionary_airlines[airline_name]=new_airline
+            count+=1
 
-        count+=1
+    #wyznaczanie sredniej
+    print("srednia")
+    for i in dictionary_airlines.items():
+        i[1].avrage()
 
-#wyznaczanie sredniej
-print("srednia")
-for i in dictionary_airlines.items():
-    i[1].avrage()
-
+dictionary_airlines = dict()
+rating_airlines(dictionary_airlines)
 print(dictionary_airlines)
