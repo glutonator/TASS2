@@ -70,21 +70,23 @@ def set_param(map_of_param,):
         print(i[1])
 
 
-# G=nx.Graph()
-# add_edges_to_graph(G) 
-# change_param_edge(G,'2965','2990',400)
-# print(G.edges(data=True))
-# change_param_all_edges(G)
-# print("\n")
-# print(G.edges(data=True))
+G=nx.Graph()
+add_nodes_to_graph(G)
+#add_edges_to_graph(G) 
+#change_param_edge(G,'2965','2990',400)
+print(G.edges(data=True))
 
-tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
-print(tmp)
+#change_param_all_edges(G)
+print("\n")
+print(G.edges(data=True))
 
-param =dict()
-for i in tmp:
-    param[i]=5
-#print(param)
-print("nowy")
-set_param(param)
-#param[]
+# tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
+# print(tmp)
+
+# param =dict()
+# for i in tmp:
+#     param[i]=5
+# #print(param)
+# print("nowy")
+# set_param(param)
+# #param[]

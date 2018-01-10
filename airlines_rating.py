@@ -164,6 +164,6 @@ def rating_airlines(dictionary_airlines):
     for i in dictionary_airlines.items():
         i[1].avrage()
 
-dictionary_airlines = dict()
-rating_airlines(dictionary_airlines)
-print(dictionary_airlines)
+# dictionary_airlines_rating = dict()
+# rating_airlines(dictionary_airlines_rating)
+# print(dictionary_airlines_rating)
