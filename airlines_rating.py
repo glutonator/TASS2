@@ -60,8 +60,24 @@ class AirLine:
         #     self.recommended+=recommended
         #     self.count+=1
 
-    def __str__(self):
-        return "Klass"
+    def dict_airline_param(self):
+        #tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
+        out = dict()
+        out['overall_rating']=self.overall_rating
+        out['seat_comfort_rating']=self.seat_comfort_rating
+        out['cabin_staff_rating']=self.cabin_staff_rating
+        out['food_beverages_rating']=self.food_beverages_rating
+        out['inflight_entertainment_rating']=self.inflight_entertainment_rating
+        out['ground_service_rating']=self.ground_service_rating
+        out['wifi_connectivity_rating']=self.wifi_connectivity_rating
+        out['value_money_rating']=self.value_money_rating
+        out['recommended']=self.recommended
+        return out
+            
+
+
+    # def __str__(self):
+    #     return "Klass"
     def __repr__(self):
         temp =self.recommended.__str__()+" "+self.count.__str__()
         #temp =self.overall_rating.__str__()+" "+self.count.__str__()
@@ -154,13 +170,13 @@ def rating_airlines(dictionary_airlines):
                     else:
                         new_airline = AirLine(airline_name,0,0,0,0,0,0,0,0,0)
                         new_airline.add_list(tmp)
-                        print(airline_name)
+                        #print(airline_name)
                         dictionary_airlines[airline_name]=new_airline
 
             count+=1
 
     #wyznaczanie sredniej
-    print("srednia")
+    #print("srednia")
     for i in dictionary_airlines.items():
         i[1].avrage()
 

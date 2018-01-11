@@ -44,6 +44,32 @@ class Airport:
         self.recommended+=list_of_param[9]
         self.count+=1
 
+    def avrage(self):
+        self.overall_rating = self.overall_rating/self.count
+        self.queuing_rating=self.queuing_rating/self.count
+        self.terminal_cleanliness_rating=self.terminal_cleanliness_rating/self.count
+        self.terminal_seating_rating=self.terminal_seating_rating/self.count
+        self.terminal_signs_rating=self.terminal_signs_rating/self.count
+        self.food_beverages_rating=self.food_beverages_rating/self.count
+        self.airport_shopping_rating=self.airport_shopping_rating/self.count
+        self.wifi_connectivity_rating=self.wifi_connectivity_rating/self.count
+        self.airport_staff_rating=self.airport_staff_rating/self.count
+        self.recommended=self.recommended/self.count
+
+    def dict_airport_param(self):
+        out = dict()
+        out['overall_rating']=self.overall_rating
+        out['queuing_rating']=self.queuing_rating
+        out['terminal_cleanliness_rating']=self.terminal_cleanliness_rating
+        out['terminal_seating_rating']=self.terminal_seating_rating
+        out['terminal_signs_rating']=self.terminal_signs_rating
+        out['food_beverages_rating']=self.food_beverages_rating
+        out['airport_shopping_rating']=self.airport_shopping_rating
+        out['wifi_connectivity_rating']=self.wifi_connectivity_rating
+        out['airport_staff_rating']=self.airport_staff_rating        
+        out['recommended']=self.recommended
+        return out
+
     def __repr__(self):
         temp =self.recommended.__str__()+" "+self.count.__str__()
         return (temp)
@@ -62,32 +88,34 @@ def rating_fix(value,default_value=77.0):
     else:       
         return float(value)
 
-#with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test2.csv', 'r',encoding="utf8") as file:
-with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airport.csv', 'r',encoding="utf8") as file:
-    count =1
-    dictionary_airlines = dict()
-    for line in file:
-        if count !=1:
-            list_info = line.split('","')
-            if (len(list_info)==20):
-                airport_name=(list_info[0])[1:len(list_info[0])]
+def rating_airports(dictionary_airports):
+    #with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\test2.csv', 'r',encoding="utf8") as file:
+    with open('C:\\Users\Filip\\Documents\GitHub\\TASS2\\dane\\rating\\airport.csv', 'r',encoding="utf8") as file:
+        count =1
+        dictionary_airlines = dict()
+        for line in file:
+            if count !=1:
+                list_info = line.split('","')
+                if (len(list_info)==20):
+                    airport_name=(list_info[0])[1:len(list_info[0])]
 
-                tmp =list()
-                for i in range (10,19):
-                    tmp.append(rating_fix(list_info[i]))
-                
-                recom_temp=(list_info[19])[0:len(list_info[19])-2]
-                tmp.append(rating_fix(recom_temp))
+                    tmp =list()
+                    for i in range (10,19):
+                        tmp.append(rating_fix(list_info[i]))
+                    
+                    recom_temp=(list_info[19])[0:len(list_info[19])-2]
+                    tmp.append(rating_fix(recom_temp))
 
-                if airport_name in dictionary_airlines:
-                    dictionary_airlines[airport_name].add_list(tmp)
-                else:
-                    new_airport = Airport(airport_name,0,0,0,0,0,0,0,0,0,0)
-                    new_airport.add_list(tmp)
-                    print(airport_name)
-                    dictionary_airlines[airport_name]=new_airport
+                    if airport_name in dictionary_airports:
+                        dictionary_airports[airport_name].add_list(tmp)
+                    else:
+                        new_airport = Airport(airport_name,0,0,0,0,0,0,0,0,0,0)
+                        new_airport.add_list(tmp)
+                        #print(airport_name)
+                        dictionary_airports[airport_name]=new_airport
 
-        count+=1
+            count+=1
+    for i in dictionary_airports.items():
+        i[1].avrage()
 
-
-print(dictionary_airlines)
+#print(dictionary_airlines)

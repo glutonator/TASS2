@@ -13,7 +13,8 @@ def create_airlines_dict():
             airline_name=airline_name.lower()
             airline_name=airline_name.replace(" ", "-")
             airline_name=airline_name.replace("\"", "")
-            dictionary_airlines[airline_id]=airline_name
+            dictionary_airlines[airline_name]=airline_id            
+            #dictionary_airlines[airline_id]=airline_name
         return dictionary_airlines
 
 def create_airport_dict():
@@ -30,7 +31,8 @@ def create_airport_dict():
             airport_name=airport_name.lower()
             airport_name=airport_name.replace(" ", "-")
             airport_name=airport_name.replace("\"", "")
-            dictionary_airport[airport_id]=airport_name
+            dictionary_airport[airport_name]= airport_id
+            #dictionary_airport[airport_id]=airport_name
         return dictionary_airport
 
 
@@ -38,5 +40,5 @@ def create_airport_dict():
 # temp=create_airlines_dict()
 # print(temp)
 
-temp=create_airport_dict()
-print(temp)            
+# temp=create_airport_dict()
+# print(temp)            
