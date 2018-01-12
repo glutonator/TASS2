@@ -6,6 +6,8 @@ import airport_rating as airport_rat
 import dictionary_air as dict_air
 import other
 from itertools import islice
+import k_shortest_paths as k_sh
+import alg_2
 
 def add_nodes_to_graph(G):
     #G.add_node(44,weight=10,latitude=-6.081689834590401,longitude=145.391998291)
@@ -127,8 +129,8 @@ def add_weight_to_edge(G,airline_id,weight):
     #print((G))    
     #print(G.edge_iter())
     #for i in G.edges().data(data=True):
-    for i in G.edges():
-        print(i[0])
+    for i in G.edges(data=True):
+        #print(i)
         #wizz-air to 5461
         #print(i)
         if i[2]['airline_id']==airline_id:
@@ -179,26 +181,66 @@ def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_a
 #wyznaczanie najkrotszej sciezki
 def shortes_path_in_graph(G,source_airport_id,destination_airport_id,k):
     
+    out=k_sh.k_shortest_paths(G,source_airport_id,destination_airport_id,k=2,weight='weight')
+    print("sdads",out)
+
+
     #print(nx.dijkstra_path(G,source_airport_id,destination_airport_id))
     #print(nx.all_pairs_dijkstra_path(G))
     #qqqq=nx.single_source_dijkstra(G,source_airport_id,destination_airport_id,5)
     #k=3
 
     #list_of_routes=nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight')
-    list_of_routes=list(islice(nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight'), k))
-    for i in list_of_routes:
-        count=0
-        #prv=i[0]
-        for j in i:
-            if count==0:
-               prv=j
-               count+=1
-            else:
-                print("dsadsa",prv,j,G[prv][j]['airline_id'])
-                prv=j
+    
+    #aaaaaa=nx.dijkstra_path(G, source_airport_id, destination_airport_id, weight='weight')
+    # tmp=nx.single_source_dijkstra(G, source_airport_id, destination_airport_id, weight='weight')    
+    # #aaaaaa=nx.single_source_dijkstra(G, destination_airport_id,source_airport_id, weight='weight')
+    # print(tmp)
+    # count=0
+    # for i in tmp[1]:
+    #     if count==0:
+    #         ptr=i
+    #         count+=1
+    #     else:
+    #         prv=j
+    #         G.remove_edge(ptr,)
+    # G.remove_edge('679','1569')
+    # G.remove_edge('679','1569')
+    # G.remove_edge('679','351')
+#    G.remove_edge('679','351')
+    
+    # aaaaaa=nx.single_source_dijkstra(G, source_airport_id, destination_airport_id, weight='weight')
+    # print(aaaaaa)
+    
+    #aaaaaa=nx.single_source_dijkstra(G, source_airport_id, destination_airport_id)
+    #print(aaaaaa)
+    #aaaaaa=nx.all_pairs_dijkstra_path(G)
+    #rrrrr=aaaaaa.__next__()
+    #yyyyy=aaaaaa.__iter__()
+    # for i in aaaaaa:
+    #     if i[0]=='1':
+    #         print("aaaaaaaaaaaaaa",i[0],i[1])
+    #print("hell",rrrrr[0])
+    #rrrrr=aaaaaa.__next__()
+    #print("hell",rrrrr[0])
+    print("done")
+    # list_of_routes=list(islice(nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight'), k))
+    # for i in list_of_routes:
+    #     count=0
+    #     #prv=i[0]
+    #     for j in i:
+    #         if count==0:
+    #            prv=j
+    #            count+=1
+    #         else:
+    #             print("dsadsa",prv,j,G[prv][j]['airline_id'])
+    #             prv=j
                
-            print(j)
-        print(i)
+    #         print(j)
+    #     print(i)
+
+
+
 
     # list_of_out = list(islice(nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight'), k))
     # for path in list_of_out:
@@ -236,7 +278,7 @@ for i in tmp2:
 airport_dict=dict_air.create_airport_dict()
 
 #G=nx.Graph()
-G=nx.MultiGraph()
+G=nx.MultiDiGraph()
 add_nodes_to_graph(G)
 add_edges_to_graph(G)
 #for i in G.edges(data=True):
