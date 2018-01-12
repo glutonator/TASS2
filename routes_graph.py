@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import airlines_rating as airlines_rat
 import airport_rating as airport_rat
 import dictionary_air as dict_air
+import other
 
 def add_nodes_to_graph(G):
     #G.add_node(44,weight=10,latitude=-6.081689834590401,longitude=145.391998291)
@@ -85,25 +86,14 @@ def set_param(map_of_param,):
     for i in map_of_param.items():
         print(i[1])
 
-#znajowanie wszystkich krwaedzi danej lini lotniczej i ustawianie wagi
-def add_weight_to_edge(G,airline_id,weight):
-    #print((G))    
-    for i in G.edges().data(data=True):
-        #wizz-air to 5461
-        #print(i)
-        if i[2]['airline_id']==airline_id:
-            i[2]['weight']=weight
-            #print(i)
-        #print("aaaaaaaaaaaaaaaaaaaaaaa ",i)
-    #print("sdadas")
 
 #ustawianie zadanaej wagi noda
 def add_weight_to_node(G,airport_id,weight):
     for i in G.nodes().data(data=True):
         if i[0]==airport_id:
             i[1]['weight']=weight
-            print(i)
-            print(i[1]['weight'])
+            #print(i)
+            #print(i[1]['weight'])
 
 #ustawiwanie wag do wszystkich nodow w opparciu o opinie
 def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_airport_id):
@@ -121,20 +111,46 @@ def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_a
             #print(wght,rat,weight_out)
         #print(weight_out)
         airport_id=dict_name_airport_id.get(i[0])
-#        airport_id=dict_name_airport_id.get('warsaw-chopin-airport')
-        print(i[0])
+        #airport_id=dict_name_airport_id.get('warsaw-chopin-airport')
+        #print(i[0])
         
         if airport_id is not None:
             count+=1
             #print(i[0])
         count2+=1
-    print(count,count2)
+    #print(count,count2)
+
+#znajowanie wszystkich krwaedzi danej lini lotniczej i ustawianie wagi + poprawka na odleglosc
+def add_weight_to_edge(G,airline_id,weight):
+    #print((G))    
+    
+    for i in G.edges().data(data=True):
+        #wizz-air to 5461
+        #print(i)
+        if i[2]['airline_id']==airline_id:
+            #print(i[0],i[1])
+            print(i[0],i[1],G.node[i[0]],G.node[i[1]])
+            lat1=G.node[i[0]]['latitude']
+            lon1=G.node[i[0]]['longitude']
+            lat2=G.node[i[1]]['latitude']
+            lon2=G.node[i[1]]['longitude']          
+            dist=other.calc_dest(lat1,lon1,lat2,lon2)
+            print(dist)
+            i[2]['weight']=weight
+            #print(i)
+        #print("aaaaaaaaaaaaaaaaaaaaaaa ",i)
+    #print("sdadas")
+
 
 #ustawianie wag do wszystkich krawedzi w oparciu o opinie
 def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_airline_id):
+    print(G.node['5']['latitude'])
+    print(G.node['5'])
     for i in dict_airlines_rating.items():
         weight_out=0
         wght=1
+        
+        
         #liczenie wagi dla konkretnej lini lotniczej
         for j in i[1].dict_airline_param().items():
             #print(dict_airline_param[j[0]])
@@ -155,13 +171,13 @@ def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_a
         #print(i[1].dict_airline_param())
 
 ###nowe
-# tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
-# #print(tmp)
-# #ustawianie jak bardzo dany parametr ma wplywac na wybor
-# param =dict()
-# for i in tmp:
-#     param[i]=5
-# airlines_dict=dict_air.create_airlines_dict()
+tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
+#print(tmp)
+#ustawianie jak bardzo dany parametr ma wplywac na wybor
+param =dict()
+for i in tmp:
+    param[i]=5
+airlines_dict=dict_air.create_airlines_dict()
 tmp2= {'overall_rating', 'queuing_rating', 'terminal_cleanliness_rating','terminal_seating_rating', 'terminal_signs_rating', 'food_beverages_rating', 'airport_shopping_rating','wifi_connectivity_rating', 'airport_staff_rating', 'recommended'}
 
 #print(tmp)
@@ -181,15 +197,15 @@ add_edges_to_graph(G)
     #print(i[0],i[1])
     #print(i[2]['airline_id'])
 
-# dictionary_airlines_rating = dict()
-# airlines_rat.rating_airlines(dictionary_airlines_rating)
-# add_weight_to_all_edge(G,dictionary_airlines_rating,param,airlines_dict)
+dictionary_airlines_rating = dict()
+airlines_rat.rating_airlines(dictionary_airlines_rating)
+add_weight_to_all_edge(G,dictionary_airlines_rating,param,airlines_dict)
 
 dictionary_airports_rating = dict()
 airport_rat.rating_airports(dictionary_airports_rating)
 #add_weight_to_node(G,'12049',33)
 add_weight_to_all_node(G,dictionary_airports_rating,param2,airport_dict)
-print(G.nodes(data=True))
+#print(G.nodes(data=True))
 
 #print(G.edges(data=True))
 
