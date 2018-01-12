@@ -1,0 +1,740 @@
+AAL,EKYT,aalborg airport
+AAR,EKAH,aarhus airport
+ABZ,EGPD,aberdeen airport
+ABJ,DIAP,abidjan airport
+AUH,OMAA,abu dhabi airport
+ABV,DNAA,abuja airport
+ACC,DGAA,accra kotoka airport
+ADA,LTAF,adana airport
+ADD,HAAB,addis ababa airport
+ADL,YPAD,adelaide airport
+AGA,GMAD,agadir airport
+AGA,GMAD,agadir al massira airport
+AMD,VAAH,ahmedabad airport
+AJA,LFKJ,ajaccio airport
+AXT,RJSK,akita airport
+AAN,OMAL,al ain airport
+ALB,KALB,albany airport
+ABQ,KABQ,albuquerque airport
+ABX,YMAY,albury airport
+ACI,EGJA,alderney airport
+AHO,LIEA,alghero fertilia airport
+ALG,DAAG,algiers airport
+ALC,LEAL,alicante airport
+ASP,YBAS,alice springs airport
+ALA,UAAA,almaty airport
+LEI,LEAM,almeria airport
+AOR,WMKA,alor setar airport
+AOC,EDAC,altenburg airport
+AMA,KAMA,amarillo airport
+AMM,OJAI,amman queen alia airport
+ATQ,VIAR,amritsar airport
+AMS,EHAM,amsterdam schiphol airport
+ANC,PANC,anchorage airport
+ESB,LTAC,ankara airport
+AYT,LTAI,antalya airport
+ANU,TAPA,antigua vc bird airport
+ANR,EBAW,antwerp deurne airport
+ARH,ULAA,arkhangelsk airport
+AUA,TNCA,aruba reina beatrix airport
+TSE,UACC,astana airport
+OVD,LEAS,asturias airport
+ASU,SGAS,asuncion silvio pettirossi airport
+ATH,LGAV,athens airport
+ATL,KATL,atlanta hartsfield airport
+AKL,NZAA,auckland airport
+AUS,KAUS,austin airport
+AVN,LFMV,avignon airport
+AYQ,YAYE,ayers rock airport
+BCM,LRBC,bacau airport
+IXB,VEBD,bagdogra airport
+BGW,ORBI,baghdad airport
+BAH,OBBI,bahrain airport
+GYD,UBBB,baku airport
+BNK,YBNA,ballina byron airport
+BWI,KBWI,baltimore washington airport
+BWN,WBSB,bandar seri begawan airport
+BDO,WICC,bandung airport
+BBU,LRBS,baneasa airport
+BLR,VOBL,bangalore airport
+DMK,VTBD,bangkok don muang airport
+BKK,VTBS,bangkok suvarnabhumi airport
+BGR,KBGR,bangor airport
+BJL,GBYD,banjul airport
+BGI,TBPB,barbados grantley adams airport
+BCN,LEBL,barcelona airport
+BRI,LIBD,bari palese airport
+BAX,UNBB,barnaul airport
+BRR,EGPR,barra eoligarry airport
+BSL,BSL,basel mulhouse airport
+KKE,NZKK,bay of islands kerikeri airport
+BVA,LFOB,beauvais airport
+PEK,ZBAA,beijing capital airport
+BEY,OLBA,beirut airport
+BEL,SBBE,belem airport
+BFS,EGAA,belfast airport
+BHD,EGAC,belfast city airport
+BEG,LYBE,belgrade airport
+BZE,MZBZ,belize airport
+CNF,SBCF,belo horizonte confins airport
+BEN,HLLB,benghazi airport
+BGO,ENBR,bergen airport
+EGC,LFBE,bergerac airport
+SXF,EDDB,berlin schonefeld airport
+TXL,EDDT,berlin tegel airport
+THF,EDDI,berlin tempelhof airport
+BDA,TXKF,bermuda airport
+BRN,LSZB,berne airport
+BBI,VEBS,bhubaneswar airport
+BIQ,LFBZ,biarritz airport
+BIO,LEBB,bilbao airport
+BLL,EKBI,billund airport
+BHX,EGBB,birmingham airport
+BHM,KBHM,birmingham shuttlesworth airport
+FRU,UAFM,bishkek airport
+BIS,KBIS,bismarck airport
+BLK,EGNH,blackpool airport
+BLZ,FWCL,blantyre airport
+BFN,FABL,bloemfontein airport
+BMI,KBMI,bloomington airport
+BVC,GVBA,boa vista airport
+BOC,MPBO,bocas del toro airport
+BJV,LTFE,bodrum airport
+BOG,SKBO,bogota airport
+BOI,KBOI,boise airport
+BLQ,LIPE,bologna marconi airport
+BOD,LFBD,bordeaux airport
+HBE,HEBA,borg el arab airport
+BOS,KBOS,boston logan airport
+BOJ,LBBG,bourgas airport
+BOH,EGHH,bournemouth airport
+BSB,SBBR,brasilia airport
+BTS,LZIB,bratislava airport
+BRE,EDDW,bremen airport
+VBS,LIPO,brescia airport
+BDS,LIBR,brindisi airport
+BNE,YBBN,brisbane airport
+BRS,EGGD,bristol airport
+BME,YBRM,broome airport
+CRL,EBCI,brussels charleroi airport
+BRU,EBBR,brussels zaventem airport
+OTP,LROP,bucharest otopeni airport
+BUD,LHBP,budapest ferihegy airport
+AEP,SABE,buenos aires airport
+BUF,KBUF,buffalo airport
+BJM,HBBA,bujumbura airport
+BUR,KBUR,burbank glendale pasadena airport
+BTV,KBTV,burlington airport
+BWT,YWYY,burnie wynyard airport
+CAG,LIEE,cagliari airport
+CNS,YBCS,cairns airport
+CAI,HECA,cairo airport
+CCU,VECC,calcutta airport
+YYC,CYYC,calgary airport
+CBR,YSCB,canberra airport
+CUN,MMUN,cancun airport
+CPT,FACT,cape town airport
+CCS,SVMI,caracas airport
+CCF,LFMK,carcassonne airport
+CWL,EGFF,cardiff airport
+CTG,SKCG,cartagena rafael nunez airport
+CMN,GMMN,casablanca airport
+CTA,LICC,catania airport
+CEB,RPVM,cebu airport
+NGO,RJGG,centrair nagoya airport
+CMF,LFLB,chambery airport
+CZX,ZSCG,changzhou airport
+CHQ,LGSA,chania airport
+CLT,KCLT,charlotte airport
+CHA,KCHA,chattanooga metropolitan airport
+CTU,ZUUU,chengdu airport
+MAA,VOMM,chennai airport
+CNX,VTCC,chiang mai airport
+CEI,VTCT,chiang rai airport
+MDW,KMDW,chicago midway airport
+ORD,KORD,chicago ohare airport
+KIV,LUKK,chisinau airport
+CGP,VGEG,chittagong shah amanat airport
+CKG,ZUCK,chongqing jiangbei airport
+CHC,NZCH,christchurch airport
+XCH,YPXM,christmas island airport
+CVG,KCVG,cincinnati airport
+CRK,RPLC,clark airport
+CLE,KCLE,cleveland airport
+CLJ,LRCL,cluj napoca airport
+CBB,SLCB,cochabamba airport
+COK,VOCI,cochin airport
+CFS,YCFS,coffs harbour airport
+CJB,VOCB,coimbatore airport
+CGN,EDDK,colognebonn airport
+CMB,VCBI,colombo airport
+COS,KCOS,colorado springs airport
+CMH,KCMH,columbus airport
+OOM,YCOM,cooma snowy mountains airport
+CPH,EKCH,copenhagen airport
+CFU,LGKR,corfu airport
+ORK,EICK,cork airport
+CRP,KCRP,corpus christi airport
+COO,DBBB,cotonou airport
+CVT,EGBE,coventry airport
+TAB,TTCP,crown point tobago airport
+CUR,TNCC,curacao airport
+CUZ,SPZO,cusco airport
+DAD,VVDN,da nang airport
+DKR,GOOY,dakar airport
+DLM,LTBS,dalaman airport
+DLC,ZYTL,dalian airport
+DFW,KDFW,dallas fort worth airport
+DAL,KDAL,dallas love field airport
+DAM,OSDI,damascus airport
+DMM,OEDF,dammam port airport
+DAR,HTDA,dar es salaam airport
+DRW,YPDN,darwin airport
+DVO,RPMD,davao airport
+DAB,KDAB,daytona beach airport
+YDF,CYDF,deer lake regional airport
+DEL,VIDP,delhi airport
+DPS,WADD,denpasar bali airport
+DEN,KDEN,denver airport
+LDY,EGAE,derry airport
+VPS,KVPS,destin ft walton beach airport
+DTW,KDTW,detroit airport
+DAC,VGHS,dhaka zia airport
+DNR,LFRD,dinard airport
+JIB,HDAM,djibouti ambouli airport
+DOH,OTBD,doha airport
+DSA,EGCN,doncaster sheffield airport
+DOK,UKCC,donetsk airport
+DTM,EDLW,dortmund airport
+DLA,FKKD,douala airport
+DRS,EDDC,dresden airport
+DXB,OMDB,dubai airport
+DUB,EIDW,dublin airport
+DBV,LDDU,dubrovnik airport
+DND,EGPN,dundee airport
+DUD,NZDN,dunedin airport
+DUR,FALE,durban airport
+MME,EGNV,durhamtees valley airport
+DYU,UTDD,dushanbe airport
+DUS,EDDL,dusseldorf airport
+EMA,EGNX,east midlands airport
+EDI,EGPH,edinburgh airport
+YEG,CYEG,edmonton airport
+ETH,LLET,eilat airport
+EIN,EHEH,eindhoven airport
+SVX,USSS,ekaterinburg koltsovo airport
+FTE,SAWC,el calafate airport
+ELP,KELP,el paso airport
+ENE,WATE,ende airport
+NBE,DTNH,enfidha hammamet airport
+EBB,HUEN,entebbe airport
+ECN,LCEN,ercan airport
+EXT,EGTE,exeter airport
+FAI,PAFA,fairbanks airport
+APW,NSFA,faleolo airport
+FAO,LPFR,faro airport
+FLR,LIRQ,florence airport
+FRL,LIPK,forli bologna airport
+FLL,KFLL,fort lauderdale airport
+RSW,KRSW,fort myers airport
+FWA,KFWA,fort wayne airport
+FOR,SBFZ,fortaleza airport
+HHN,EDFH,frankfurt hahn airport
+FRA,EDDF,frankfurt main airport
+FNA,GFLL,freetown airport
+FDH,EDNY,friedrichshafen airport
+FUE,GCFV,fuerteventura airport
+FUK,RJFF,fukuoka airport
+FNC,LPMA,funchal airport
+GYY,KGYY,garychicago airport
+GDN,EPGD,gdansk airport
+GVA,LSGG,geneva airport
+GOA,LIMJ,genova airport
+GIB,LXGB,gibraltar airport
+GRO,LEGE,girona airport
+FCA,KGPI,glacier park airport
+GLA,EGPF,glasgow airport
+PIK,EGPK,glasgow prestwick airport
+GOI,VOGO,goa airport
+GYN,SBGO,goiania santa genoveva airport
+OOL,YBCG,gold coast airport
+GSE,ESGP,gothenburg city airport
+GOT,ESGG,gothenburg landvetter airport
+LPA,GCLP,gran canaria airport
+GRX,LEGR,granada airport
+GRR,KGRR,grand rapids airport
+GRZ,LOWG,graz airport
+BGM,KBGM,greater binghamton airport
+ROC,KROC,greater rochester airport
+GNB,LFLS,grenoble airport
+GFF,YGTH,griffith airport
+GDL,MMGL,guadalajara airport
+CAN,ZGGG,guangzhou airport
+GUA,MGGT,guatemala airport
+GYE,SEGU,guayaquil airport
+GCI,EGJB,guernsey airport
+KWL,ZGKL,guilin liangjiang airport
+GPT,KGPT,gulfport airport
+HAK,ZJHK,haikou airport
+HLD,ZBLA,hailar dongshan airport
+HKD,RJCH,hakodate airport
+YHZ,CYHZ,halifax airport
+DOH,OTHH,hamad doha airport
+HAM,EDDH,hamburg airport
+LBC,EDHL,hamburg lubek airport
+YHM,CYHM,hamilton airport
+BHB,KBHB,hancock county bar harbor airport
+HGH,ZSHC,hangzhou airport
+HAJ,EDDV,hannover airport
+HAN,VVNB,hanoi airport
+HRE,FVHA,harare airport
+MDT,KMDT,harrisburg airport
+BDL,KBDL,hartford airport
+HDY,VTSS,hat yai airport
+HTY,LTDA,hatay airport
+HAV,MUHA,havana airport
+HEH,VYHH,heho airport
+HEL,EFHK,helsinki vantaa airport
+HER,LGIR,heraklion airport
+ITO,PHTO,hilo airport
+HIJ,RJOA,hiroshima airport
+SGN,VVTS,ho chi minh city airport
+HBA,YMHB,hobart airport
+HOG,MUHG,holguin airport
+HKG,VHHH,hong kong airport
+HIR,AGGH,honiara airport
+HNL,PHNL,honolulu airport
+HID,YHID,horn island airport
+IAH,KIAH,houston george bush intercontinental airport
+HOU,KHOU,houston hobby airport
+HUY,EGNJ,humberside airport
+HSV,KHSV,huntsville review airport
+HRG,HEGN,hurghada airport
+HYD,VOHS,hyderabad airport
+IBZ,LEIB,ibiza airport
+ILO,RPVI,iloilo airport
+ICN,RKSI,incheon airport
+IND,KIND,indianapolis airport
+INN,LOWI,innsbruck airport
+INV,EGPE,inverness airport
+NOC,EIKN,ireland west knock airport
+IKT,UIII,irkutsk airport
+ISB,OPRN,islamabad airport
+IOM,EGNS,isle of man ronaldsway airport
+IST,LTBA,istanbul ataturk airport
+SAW,LTFJ,istanbul sabiha gokcen airport
+ADB,LTBJ,izmir airport
+JAC,KJAC,jackson hole airport
+JAX,KJAX,jacksonville airport
+CGK,WIII,jakarta airport
+JED,OEJN,jeddah airport
+XRY,LEJR,jerez de la frontera airport
+JER,EGJJ,jersey airport
+JMU,ZYJM,jiamusi airport
+TNA,ZSJN,jinan yaoqiang airport
+JNZ,ZYJZ,jinzhou airport
+JNB,FAOR,johannesburg or tambo airport
+SNA,KSNA,john wayne airport
+JUB,HSSJ,juba airport
+KBL,OAKB,kabul airport
+OGG,PHOG,kahului maui airport
+KLX,LGKL,kalamata airport
+KLO,RPVK,kalibo international airport
+KGD,UMKK,kaliningrad airport
+KIX,RJBB,kansai airport
+MCI,KMCI,kansas city airport
+KHH,RCKH,kaohsiung airport
+KHI,OPKC,karachi airport
+FKB,EDSB,karlsruhe airport
+KTM,VNKT,kathmandu airport
+KTW,EPKT,katowice airport
+KUN,EYKA,kaunas airport
+KZN,UWKD,kazan airport
+KEF,BIKF,keflavik airport
+MSE,EGMH,kent airport
+KIR,EIKY,kerry airport
+KRT,HSSS,khartoum airport
+KBP,UKBB,kiev borispol airport
+IEV,UKKK,kiev zhulyany airport
+KGL,HRYR,kigali airport
+JRO,HTKJ,kilimanjaro airport
+KIN,MKJP,kingston airport
+FIH,FZAA,kinshasa airport
+KKN,ENKR,kirkenes airport
+KOI,EGPA,kirkwall airport
+KLU,LOWK,klagenfurt airport
+KUL,WMKK,klia kuala lumpur airport
+USM,VTSM,koh samui airport
+CCU,VECC,kolkata airport
+KOA,PHKO,kona airport
+KGS,LGKO,kos airport
+KSC,LZKZ,kosice airport
+BKI,WBKK,kota kinabalu airport
+KBV,VTSG,krabi airport
+KRK,EPKK,krakow airport
+KRR,URKK,krasnodar airport
+KRS,ENCN,kristiansand airport
+KUA,WMKD,kuantan airport
+KCH,WBGG,kuching airport
+KMG,ZPPP,kunming airport
+KWI,OKBK,kuwait airport
+LGA,KLGA,la guardia airport
+LRH,LFBH,la rochelle ile de re airport
+LOS,DNMM,lagos airport
+LHE,OPLA,lahore airport
+LAU,HKLU,lamu airport
+LGK,WMKL,langkawi airport
+HLA,FALA,lanseria airport
+ACE,GCRR,lanzarote arrecife airport
+LCA,LCLK,larnaca airport
+LAS,KLAS,las vegas airport
+LST,YMLT,launceston airport
+LBA,EGNM,leeds bradford airport
+LEJ,EDDP,leipzighalle airport
+BJX,MMLO,leon guanajuato airport
+LEX,KLEX,lexington airport
+LIR,MRLB,liberia airport
+LBV,FOOL,libreville airport
+LGG,EBLG,liege airport
+LLW,FWKI,lilongwe airport
+LIM,SPJC,lima airport
+LNZ,LOWL,linz airport
+LIS,LPPT,lisbon airport
+LSY,YLIS,lismore airport
+LIT,KLIT,little rock airport
+LPL,EGGP,liverpool airport
+LVI,FLLI,livingstone airport
+LJU,LJLJ,ljubljana airport
+LCY,EGLC,london city airport
+LGW,EGKK,london gatwick airport
+LHR,EGLL,london heathrow airport
+STN,EGSS,london stansted airport
+LGB,KLGB,long beach airport
+ISP,KISP,long island macarthur airport
+LAX,KLAX,los angeles lax airport
+SDF,KSDF,louisville international airport
+LAD,FNLU,luanda airport
+LPQ,VLLB,luang prabang airport
+LUG,LSZA,lugano airport
+LUN,FLKK,lusaka airport
+LTN,EGGW,luton airport
+LUX,ELLX,luxembourg airport
+LXR,HELX,luxor airport
+LWO,UKLL,lviv airport
+LYS,LFLL,lyon saint exupery airport
+MFM,VMMC,macau airport
+MAD,LEMD,madrid barajas airport
+MAH,LEMH,mahon airport
+SSG,FGSL,malabo airport
+AGP,LEMG,malaga airport
+MLE,VRMM,male airport
+KAN,DNKN,mallam aminu kano intl airport
+MMX,ESMS,malmo airport
+MLA,LMML,malta airport
+MDC,WAMM,manado airport
+MGA,MNMG,managua airport
+MAO,SBEG,manaus airport
+MAN,EGCC,manchester airport
+MDL,VYMD,mandalay annisaton airport
+IXE,VOML,mangalore airport
+MNL,RPLL,manila ninoy aquino airport
+MPM,FQMA,maputo airport
+MAR,SVMC,maracaibo la chinita airport
+RAK,GMMX,marrakech airport
+RMF,HEMA,marsa alam airport
+MRS,LFML,marseille airport
+MHD,OIMM,mashhad airport
+MUB,FBMN,maun airport
+MRU,FIMP,mauritius airport
+KNO,WIMM,medan airport
+MEL,YMML,melbourne airport
+AVV,YMAV,melbourne avalon airport
+FMM,EDJA,memmingen airport
+MEM,KMEM,memphis airport
+MEX,MMMX,mexico city airport
+MIA,KMIA,miami airport
+BGY,LIME,milan bergamo airport
+LIN,LIML,milan linate airport
+MXP,LIMC,milan malpensa airport
+MKE,KMKE,milwaukee airport
+MSP,KMSP,minneapolis st paul airport
+MYY,WBGR,miri airport
+MBA,HKMO,mombasa airport
+MIR,DTMB,monastir airport
+MBJ,MKJS,montego bay airport
+MVD,SUMU,montevideo airport
+CKV,KCKV,montgomery regional airport
+MPL,LFMT,montpellier airport
+YUL,CYUL,montreal trudeau airport
+DME,UUDD,moscow domodedovo airport
+SVO,UUEE,moscow sheremetyevo airport
+FMO,EDDG,muenster osnabrueck airport
+BOM,VABB,mumbai airport
+MUC,EDDM,munich airport
+MJV,LELC,murcia san javier airport
+MCT,OOMS,muscat seeb airport
+MSL,KMSL,muscle shoals airport
+JMK,LGMK,mykonos airport
+MYR,KMYR,myrtle beach airport
+NAN,NFFN,nadi airport
+NBO,HKJK,nairobi airport
+NTE,LFRS,nantes airport
+NAP,LIRN,naples airport
+APF,KAPF,naples municipal airport
+NRA,YNAR,narrandeera leeton airport
+BNA,KBNA,nashville airport
+NAS,MYNN,nassau airport
+MSY,KMSY,new orleans airport
+JFK,KJFK,new york jfk airport
+EWR,KEWR,newark airport
+NCL,EGNT,newcastle airport
+NQY,EGHQ,newquay airport
+NCE,LFMN,nice cote dazur airport
+FNI,LFTW,nimes airport
+NGB,ZSNB,ningbo lishe airport
+NLK,YSNF,norfolk airport
+NRK,ESSP,norrkoping airport
+NWI,EGSH,norwich airport
+NUE,EDDN,nuremburg airport
+OAK,KOAK,oakland airport
+ODS,UKOO,odessa airport
+OKA,ROAH,okinawa naha airport
+OKC,KOKC,oklahoma city airport
+OLB,LIEO,olbia costa smeralda airport
+ONT,KONT,ontario airport
+MCO,KMCO,orlando airport
+SFB,KSFB,orlando sanford airport
+OSL,ENGM,oslo airport
+YOW,CYOW,ottawa airport
+OUA,DFFD,ouagadougou airport
+ATW,KATW,outagamie county airport
+PAD,EDLP,paderborn airport
+PKZ,VLPS,pakse airport
+PSP,KPSP,palm springs airport
+SPC,GCLA,palma airport
+PTY,MPTO,panama tocumen airport
+PPT,NTAA,papeete airport
+PFO,LCPH,paphos airport
+PBM,SMJP,paramaribo airport
+CDG,LFPG,paris cdg airport
+ORY,LFPO,paris orly airport
+PUF,LFBP,pau airport
+PEN,WMKP,penang airport
+PNS,KPNS,pensacola airport
+PGF,LFMP,perpignan airport
+PER,YPPH,perth airport
+PHL,KPHL,philadelphia airport
+PNH,VDPP,phnom penh airport
+PHX,KPHX,phoenix airport
+HKT,VTSP,phuket airport
+POS,TTPP,piarco airport
+PSA,LIRP,pisa airport
+PIT,KPIT,pittsburgh airport
+PDV,LBPD,plovdiv airport
+PLH,EGHD,plymouth airport
+PNR,FCPP,pointe noire airport
+PTP,TFFR,pointe a pitre airport
+PIS,LFBI,poitiers airport
+PDL,LPPD,ponta delgada airport
+PAP,MTPP,port au prince airport
+PLZ,FAPE,port elizabeth airport
+PHC,DNPO,port harcourt airport
+PQQ,YPMQ,port macquarie airport
+POM,AYPY,port moresby airport
+VLI,NVVV,port vila bauerfield airport
+PDX,KPDX,portland airport
+OPO,LPPR,porto airport
+POZ,EPPO,poznan airport
+PRG,LKPR,prague airport
+PVK,LGPZ,preveza airport
+YPR,CYPR,prince rupert airport
+PRN,BKPR,pristina airport
+PVD,KPVD,providence airport
+PVR,MMPR,puerto vallarta airport
+PUY,LDPL,pula airport
+RDN,WMPR,pulau redang airport
+TOD,WMBT,pulau tioman airport
+PNQ,VAPO,pune airport
+PUJ,MDPC,punta cana airport
+PDP,SULS,punta del este airport
+TAO,ZSQD,qingdao airport
+YQB,CYQB,quebec city airport
+UIO,SEQM,quito mariscal airport
+RPR,VERP,raipur airport
+RDU,KRDU,raleigh durham airport
+RAR,NCRG,raratonga airport
+REC,SBRF,recife airport
+RDD,KRDD,redding municipal airport
+RNO,KRNO,reno tahoe airport
+RHO,LGRP,rhodes airport
+RIC,KRIC,richmond airport
+RIX,EVRA,riga airport
+RJK,LDRI,rijeka airport
+RMI,LIPR,rimini airport
+GIG,SBGL,rio de janeiro airport
+RUH,OERK,riyadh airport
+SKB,TKPK,robert l bradshaw st kitts airport
+ROK,YBRK,rockhampton airport
+RDZ,LFCR,rodez airport
+MFR,KMFR,rogue valley medford airport
+CIA,LIRA,rome ciampino airport
+FCO,LIRF,rome fiumicino airport
+ROV,URRR,rostov na donu airport
+RTM,EHRD,rotterdam airport
+RVN,EFRO,rovaniemi airport
+SMF,KSMF,sacramento airport
+SID,GVAC,sal airport
+SLC,KSLC,salt lake city airport
+SSA,SBSV,salvador airport
+SZG,LOWS,salzburg airport
+SAN,KSAN,san diego airport
+SFO,KSFO,san francisco airport
+SJC,KSJC,san jose airport
+SJC,KSJC,san jose intl airport
+SJU,TJSJ,san juan airport
+SLP,MMSP,san luis potosi airport
+EAS,LESO,san sebastian airport
+SAH,OYSN,sanaa int airport
+SDR,LEXJ,santander airport
+SCL,SCEL,santiago de chile airport
+SDQ,MDSD,santo domingo airport
+JTR,LGSR,santorini airport
+SYX,ZJSY,sanya airport
+CGH,SBSP,sao paulo congonhas airport
+GRU,SBGR,sao paulo guarulhos airport
+CTS,RJCC,sapporo chitose airport
+SJJ,LQSA,sarajevo airport
+YXE,CYXE,saskatoon airport
+SAV,KSAV,savannah airport
+SDV,LLSD,sde dov airport
+SEA,KSEA,seattle airport
+GMP,RKSS,seoul gimpo airport
+ICN,RKSI,seoul incheon airport
+SVQ,LEZL,seville airport
+SEZ,FSIA,seychelles airport
+SHA,ZSSS,shanghai hongqiao airport
+PVG,ZSPD,shanghai pudong airport
+SNN,EINN,shannon airport
+SHJ,OMSJ,sharjah airport
+SSH,HESH,sharm el sheikh airport
+SHE,ZYTX,shenyang airport
+SZX,ZGSZ,shenzhen baoan airport
+REP,VDSR,siem reap airport
+SIP,UKFF,simferopol airport
+SIN,WSSS,singapore changi airport
+XSP,WSSL,singapore seletar airport
+FSD,KFSD,sioux falls regional airport
+SKP,LWSK,skopje airport
+SXL,EISG,sligo airport
+SOF,LBSF,sofia airport
+SOU,EGHI,southampton airport
+SEN,EGMC,southend airport
+SPU,LDSP,split airport
+SGF,KSGF,springfield branson airport
+SXR,VISR,srinagar airport
+STL,KSTL,st louis airport
+UVF,TLPL,st lucia airport
+PIE,KPIE,st pete clearwater international airport
+LED,ULLI,st petersburg airport
+SVG,ENZV,stavanger airport
+SWF,KSWF,stewart airport
+ARN,ESSA,stockholm arlanda airport
+BMA,ESSB,stockholm bromma airport
+VST,ESOW,stockholm vasteras airport
+NYO,ESKN,stockholm skavsta airport
+SXB,LFST,strasbourg airport
+STR,EDDS,stuttgart airport
+SZB,WMSA,subang kuala lumpur airport
+THS,VTPO,sukhothai airport
+LSI,EGPB,sumburgh airport
+FNJ,ZKPY,sunan pyongyang airport
+MCY,YBSU,sunshine coast airport
+SYD,YSSY,sydney airport
+SYR,KSYR,syracuse hancock airport
+SZZ,EPSC,szczecin airport
+TCP,HETB,taba airport
+TPE,RCTP,taipei taoyuan airport
+TLH,KTLH,tallahassee airport
+TLL,EETN,tallin airport
+TPA,KTPA,tampa airport
+TMP,EFTP,tampere pirkkala airport
+TAS,UTTT,tashkent airport
+TBS,UGTB,tbilisi airport
+THR,OIII,tehran mehrabad airport
+TLV,LLBG,tel aviv airport
+TFS,GCTS,tenerife airport
+SNW,VYTD,thandwe airport
+SKG,LGTS,thessaloniki airport
+TSN,ZBTJ,tianjin binhai airport
+TIJ,MMTJ,tijuana airport
+TIA,LATI,tirana airport
+HND,RJTT,tokyo haneda airport
+NRT,RJAA,tokyo narita airport
+NOU,NWWW,tontouta airport
+YTZ,CYTZ,toronto city centre airport
+YYZ,CYYZ,toronto pearson airport
+TRF,ENTO,torp airport
+TLS,LFBO,toulouse airport
+TUF,LFOT,tours val de loire airport
+TSV,YBTL,townsville airport
+TPS,LICT,trapani birgi airport
+TRS,LIPQ,trieste airport
+TIP,HLLT,tripoli airport
+TRV,VOTV,trivandrum airport
+TOS,ENTC,tromso airport
+TRD,ENVA,trondheim airport
+TUS,KTUS,tucson airport
+TUN,DTTA,tunis carthage airport
+TRN,LIMF,turin airport
+UDR,VAUD,udaipur airport
+UTH,VTUD,udon thani airport
+ULN,ZMUB,ulaanbaatar airport
+USH,SAWH,ushuaia airport
+VLC,LEVC,valencia airport
+VLL,LEVD,valladolid airport
+YVR,CYVR,vancouver airport
+VAR,LBWN,varna airport
+VCE,LIPZ,venice marco polo airport
+TSF,LIPH,venice treviso airport
+VRN,LIPX,verona airport
+VFA,FVFA,victoria falls airport
+YYJ,CYYJ,victoria intl airport
+VIE,LOWW,vienna airport
+VTE,VLVT,vientiane airport
+VNO,EYVI,vilnius airport
+VKO,UUWW,vnukovo airport
+VOG,URWW,volgograd airport
+ACT,KACT,waco airport
+WGA,YSWG,wagga wagga airport
+WKJ,RJCW,wakkanai airport
+WAW,EPWA,warsaw chopin airport
+WMI,EPMO,warsaw modlin airport
+IAD,KIAD,washington dulles airport
+DCA,KDCA,washington reagan national airport
+WAT,EIWF,waterford airport
+NRN,EDLV,weeze airport
+WEH,ZSWH,weihai airport
+WLG,NZWN,wellington airport
+HPN,KHPN,westchester county airport
+GWT,EDXW,westerland sylt airport
+ICT,KICT,wichita airport
+WIC,EGPC,wick airport
+WDH,FYWH,windhoek airport
+YWG,CYWG,winnipeg airport
+WRO,EPWR,wroclaw strachowice airport
+XIY,ZLXY,xian xianyang airport
+XMN,ZSAM,xiamen airport
+XNN,ZLXN,xining airport
+RGN,VYYY,yangon airport
+NSI,FKYS,yaounde airport
+EVN,UDYZ,yerevan airport
+YIW,ZSYW,yiwu airport
+JOG,WAHH,yogyakarta airport
+UUS,UHSS,yuzhno sakhalinsk airport
+ZAG,LDZA,zagreb airport
+ZTH,LGZA,zakynthos airport
+ZNZ,HTZA,zanzibar airport
+ZAZ,LEZG,zaragoza airport
+CGO,ZHCC,zhengzhou airport
+ZUH,ZGSD,zhuhai airport
+ZRH,LSZH,zurich airport

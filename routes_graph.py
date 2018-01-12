@@ -5,6 +5,7 @@ import airlines_rating as airlines_rat
 import airport_rating as airport_rat
 import dictionary_air as dict_air
 import other
+from itertools import islice
 
 def add_nodes_to_graph(G):
     #G.add_node(44,weight=10,latitude=-6.081689834590401,longitude=145.391998291)
@@ -47,8 +48,9 @@ def add_edges_to_graph(G):
             source_airport_id=list_info[3]
             destination_airport_id=list_info[5]
             if (source_airport_id!='\\N' and destination_airport_id!='\\N'):
-                #tutaj dodawnie krwaedzi do grafu
-                G.add_edge(source_airport_id,destination_airport_id,weight=1,airline_id=airline_id)
+                if (G.has_node(source_airport_id)==True and G.has_node(destination_airport_id)==True):
+                    #tutaj dodawnie krwaedzi do grafu
+                    G.add_edge(source_airport_id,destination_airport_id,weight=1,airline_id=airline_id)
             #trzeba policzyć odleglosc po szerokosci i dl geograficznej miedzy nodami
         #nx.draw(G)
         #plt.show()
@@ -123,20 +125,23 @@ def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_a
 #znajowanie wszystkich krwaedzi danej lini lotniczej i ustawianie wagi + poprawka na odleglosc
 def add_weight_to_edge(G,airline_id,weight):
     #print((G))    
-    
-    for i in G.edges().data(data=True):
+    #print(G.edge_iter())
+    #for i in G.edges().data(data=True):
+    for i in G.edges():
+        print(i[0])
         #wizz-air to 5461
         #print(i)
         if i[2]['airline_id']==airline_id:
             #print(i[0],i[1])
-            print(i[0],i[1],G.node[i[0]],G.node[i[1]])
+            #print(i[0],i[1],G.node[i[0]],G.node[i[1]])
             lat1=G.node[i[0]]['latitude']
             lon1=G.node[i[0]]['longitude']
             lat2=G.node[i[1]]['latitude']
             lon2=G.node[i[1]]['longitude']          
             dist=other.calc_dest(lat1,lon1,lat2,lon2)
-            print(dist)
-            i[2]['weight']=weight
+            #print(dist)
+            i[2]['weight']=weight*dist.km
+            #print(i[2]['weight'])
             #print(i)
         #print("aaaaaaaaaaaaaaaaaaaaaaa ",i)
     #print("sdadas")
@@ -159,7 +164,8 @@ def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_a
             #weight_out+=j[1]*wght
             weight_out+=rat*wght
             #print(i,j[0],j[1])
-
+        weight_out=1/weight_out
+        #print("wwww",weight_out)
         airlines_id=dict_name_airline_id.get(i[0])
         #jesli opinia dotyczy lini ktora jest w pliku route.dat.txt
         if airlines_id is not None:
@@ -169,6 +175,47 @@ def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_a
         #print(i,dict_name_airline_id.get(i[0]))
         #add_weight_to_edge(G, ,weight_out )
         #print(i[1].dict_airline_param())
+
+#wyznaczanie najkrotszej sciezki
+def shortes_path_in_graph(G,source_airport_id,destination_airport_id,k):
+    
+    #print(nx.dijkstra_path(G,source_airport_id,destination_airport_id))
+    #print(nx.all_pairs_dijkstra_path(G))
+    #qqqq=nx.single_source_dijkstra(G,source_airport_id,destination_airport_id,5)
+    #k=3
+
+    #list_of_routes=nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight')
+    list_of_routes=list(islice(nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight'), k))
+    for i in list_of_routes:
+        count=0
+        #prv=i[0]
+        for j in i:
+            if count==0:
+               prv=j
+               count+=1
+            else:
+                print("dsadsa",prv,j,G[prv][j]['airline_id'])
+                prv=j
+               
+            print(j)
+        print(i)
+
+    # list_of_out = list(islice(nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight'), k))
+    # for path in list_of_out:
+    #     print(path)
+
+        
+    #wwwww=nx.all_pairs_dijkstra_path(G)
+    #wwwww[source_airport_id]  
+    # wwwww.__next__()
+ 
+    #print(wwwww)   
+    # print(wwwww.__next__())
+    #print("done")   
+    #print(wwwww.__next__())
+    #wwwww(1,2)
+    #print("done")
+    
 
 ###nowe
 tmp = {'overall_rating', 'seat_comfort_rating' , 'cabin_staff_rating','food_beverages_rating','inflight_entertainment_rating','ground_service_rating','wifi_connectivity_rating','value_money_rating','recommended'}
@@ -188,7 +235,8 @@ for i in tmp2:
 
 airport_dict=dict_air.create_airport_dict()
 
-G=nx.Graph()
+#G=nx.Graph()
+G=nx.MultiGraph()
 add_nodes_to_graph(G)
 add_edges_to_graph(G)
 #for i in G.edges(data=True):
@@ -205,6 +253,16 @@ dictionary_airports_rating = dict()
 airport_rat.rating_airports(dictionary_airports_rating)
 #add_weight_to_node(G,'12049',33)
 add_weight_to_all_node(G,dictionary_airports_rating,param2,airport_dict)
+print(G.has_node('1'))
+print(G.node['1'])
+print("to jest to")
+#shortes_path_in_graph(G,'3272','3250')
+shortes_path_in_graph(G,'679','340',4)
+#for path in shortes_path_in_graph(G,'679','340',4):
+#    print(type(path))
+#shortes_path_in_graph(G,'679','350')
+#shortes_path_in_graph(G,'679','340')
+
 #print(G.nodes(data=True))
 
 #print(G.edges(data=True))
