@@ -7,7 +7,7 @@ import dictionary_air as dict_air
 import other
 from itertools import islice
 import k_shortest_paths as k_sh
-import alg_2
+#import alg_2
 
 def add_nodes_to_graph(G):
     #G.add_node(44,weight=10,latitude=-6.081689834590401,longitude=145.391998291)
@@ -181,8 +181,8 @@ def add_weight_to_all_edge(G,dict_airlines_rating,dict_airline_param,dict_name_a
 #wyznaczanie najkrotszej sciezki
 def shortes_path_in_graph(G,source_airport_id,destination_airport_id,k):
     
-    out=k_sh.k_shortest_paths(G,source_airport_id,destination_airport_id,k=2,weight='weight')
-    print("sdads",out)
+    # out=k_sh.k_shortest_paths(G,source_airport_id,destination_airport_id,k=2,weight='weight')
+    # print("sdads",out)
 
 
     #print(nx.dijkstra_path(G,source_airport_id,destination_airport_id))
@@ -192,21 +192,42 @@ def shortes_path_in_graph(G,source_airport_id,destination_airport_id,k):
 
     #list_of_routes=nx.shortest_simple_paths(G, source_airport_id, destination_airport_id, weight='weight')
     
-    #aaaaaa=nx.dijkstra_path(G, source_airport_id, destination_airport_id, weight='weight')
-    # tmp=nx.single_source_dijkstra(G, source_airport_id, destination_airport_id, weight='weight')    
-    # #aaaaaa=nx.single_source_dijkstra(G, destination_airport_id,source_airport_id, weight='weight')
-    # print(tmp)
-    # count=0
-    # for i in tmp[1]:
-    #     if count==0:
-    #         ptr=i
-    #         count+=1
-    #     else:
-    #         prv=j
-    #         G.remove_edge(ptr,)
-    # G.remove_edge('679','1569')
-    # G.remove_edge('679','1569')
-    # G.remove_edge('679','351')
+    #kopiowanie grafu
+    H=G.copy()
+
+    for qq in range(0,k+1): 
+        #aaaaaa=nx.dijkstra_path(G, source_airport_id, destination_airport_id, weight='weight')
+        tmp=nx.single_source_dijkstra(H, source_airport_id, destination_airport_id, weight='weight')    
+        #aaaaaa=nx.single_source_dijkstra(G, destination_airport_id,source_airport_id, weight='weight')
+        print(tmp)
+        count=0
+        ptr=tmp[1]
+        for i in tmp[1]:
+            if count==0:
+                ptr=i
+                count+=1
+            else:
+                wght=99999999
+                
+                #znaleznie krawedzi o najmniejszej wadze ktora zaostalu uzyta
+                for (u, v, c,kk) in H.edges(data='weight',keys=True):               
+                    if(u==ptr and v==i):
+                        #print(G.edge[ptr,i]['weight'])
+                        print("j",u, v, c,k)
+                        if(wght>c):
+                            wght=c
+                            kkey=kk
+                H.remove_edge(ptr,i,wght)
+                        
+                #G.remove_edge(ptr,i)
+                #G.remove_edge(ptr,i)
+                tmp=nx.single_source_dijkstra(H, source_airport_id, destination_airport_id, weight='weight')
+                print(ptr,i,tmp)              
+                ptr=i
+        
+    #G.remove_edge('679','1569')
+    #G.remove_edge('679','1569')
+    #G.remove_edge('679','351')
 #    G.remove_edge('679','351')
     
     # aaaaaa=nx.single_source_dijkstra(G, source_airport_id, destination_airport_id, weight='weight')
@@ -299,7 +320,7 @@ print(G.has_node('1'))
 print(G.node['1'])
 print("to jest to")
 #shortes_path_in_graph(G,'3272','3250')
-shortes_path_in_graph(G,'679','340',4)
+shortes_path_in_graph(G,'679','350',4)
 #for path in shortes_path_in_graph(G,'679','340',4):
 #    print(type(path))
 #shortes_path_in_graph(G,'679','350')
