@@ -8,5 +8,12 @@ def calc_dest(latitude1,longitude1,latitude2,longitude2):
     out = vincenty(newport_ri,cleveland_oh)
     return out
 
-rrr= calc_dest(4,4,4,5)
-print(rrr)
+#rrr= calc_dest(4,4,4,5)
+#print(rrr)
+
+
+class shortes_paths:
+    def __init__(self,weigh_list,airports_list,airline_list):
+        self.weigh_list=weigh_list
+        self.airports_list=airports_list
+        self.airline_list=airline_list
