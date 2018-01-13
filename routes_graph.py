@@ -100,7 +100,7 @@ def add_weight_to_node(G,airport_id,weight):
             #print(i[1]['weight'])
 
 #ustawiwanie wag do wszystkich nodow w opparciu o opinie
-def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_airport_id):
+def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_airport_id,dict_name_rat_name_route):
     count =0
     count2=0
     for i in dict_airports_rating.items():
@@ -115,15 +115,24 @@ def add_weight_to_all_node(G,dict_airports_rating,dict_airport_param,dict_name_a
             #print(wght,rat,weight_out)
         #print(weight_out)
         weight_out=1/weight_out
-        airport_id=dict_name_airport_id.get(i[0])
+        #mnoznik by zwiekszyc wartosc wagi
+        weight_out=weight_out*100
+        
+
+        #airport_id=dict_name_airport_id.get(i[0])
+        airport_id=dict_name_airport_id.get(dict_name_rat_name_route.get(i[0]))
         #airport_id=dict_name_airport_id.get('warsaw-chopin-airport')
         #print(i[0])
-        
+        #print(airport_id)
         if airport_id is not None:
             count+=1
+            #print(G.node[airport_id])
+            G.node[airport_id]['weight']=weight_out
+            print(G.node[airport_id])
+            
             #print(i[0])
         count2+=1
-    #print(count,count2)
+    print(count,count2)
 
 #znajowanie wszystkich krwaedzi danej lini lotniczej i ustawianie wagi + poprawka na odleglosc
 def add_weight_to_edge(G,airline_id,weight):
@@ -145,7 +154,7 @@ def add_weight_to_edge(G,airline_id,weight):
             wght1=G.node[i[0]]['weight']
             wght2=G.node[i[1]]['weight']
             wght_node=wght1*wght2
-            print(wght_node)
+            #print(wght_node)
             #######
             dist=other.calc_dest(lat1,lon1,lat2,lon2)
             #print(dist)

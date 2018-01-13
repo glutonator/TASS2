@@ -8,6 +8,7 @@ import other
 from itertools import islice
 import k_shortest_paths as k_sh
 import routes_graph as route
+import other2
 
 # import networkx as nx
 # import matplotlib.pyplot as plt
@@ -88,9 +89,11 @@ route.add_weight_to_all_edge(G,dictionary_airlines_rating,param,airlines_dict)
 dictionary_airports_rating = dict()
 airport_rat.rating_airports(dictionary_airports_rating)
 
-route.add_weight_to_all_node(G,dictionary_airports_rating,param2,airport_dict)
+dict_name_rat_name_route=other2.rating_airlines_fix()
 
+route.add_weight_to_all_node(G,dictionary_airports_rating,param2,airport_dict,dict_name_rat_name_route)
+print(G.edges(data=True))
 print("to jest to")
-#shortes_path_in_graph(G,'3272','3250')
+#route.shortes_path_in_graph(G,'3272','3250',4)
 route.shortes_path_in_graph(G,'679','350',4)
 print("done")
